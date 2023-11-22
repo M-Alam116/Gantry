@@ -15,6 +15,20 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "loop-scroll": "loop-scroll 15s linear infinite",
+        "loop-scroll-reverse": "loop-scroll-reverse 15s linear infinite"
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "loop-scroll-reverse": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(100%)" },
+        },
+      },
     },
   },
   darkMode: "class",

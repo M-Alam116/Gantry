@@ -5,6 +5,9 @@ import Image from "next/image";
 import { Fragment } from "react";
 import { TbPlayerPlayFilled } from "react-icons/tb";
 import { researchData, projectsData, productData } from "../data/BlogData";
+import CircularShape from "@/components/home/CircularShape";
+import Pattern from "@/components/home/Pattern";
+import Pat from "@/components/home/Pat";
 export default function Home() {
   return (
     <Fragment>
@@ -14,7 +17,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
         />
       </Head>
-      <div className="bg-[#000000] w-full max-w-[1440px] min-h-screen flex flex-col mx-auto">
+      <div className="bg-[#000000] w-full max-w-[1440px] min-h-screen flex flex-col mx-auto overflow-hidden">
         <Header />
         <div className="flex flex-col items-center justify-center pt-[10rem] gap-[1rem] px-[10px]">
           <div className="bg-[#fff] text-[#000] rounded-full px-[20px] py-[7px] w-fit text-[12px] font-[600] uppercase text-center">
@@ -189,6 +192,48 @@ export default function Home() {
             />
           </div>
         </div>
+        {/* <div className="flex items-center justify-center py-[5rem]">
+          <CircularShape />
+        </div> */}
+        <div className="flex mx-auto overflow-hidden">
+          <div className="flex overflow-hidden animate-loop-scroll">
+            <Pattern />
+            <Pattern />
+            <Pattern />
+            <Pattern />
+          </div>
+          <div
+            className="flex overflow-hidden animate-loop-scroll"
+            aria-hidden={true}
+          >
+            <Pattern />
+            <Pattern />
+            <Pattern />
+            <Pattern />
+          </div>
+        </div>
+
+        <div className="flex mx-auto overflow-hidden">
+          <div className="flex overflow-hidden animate-loop-scroll-reverse">
+            <Pattern />
+            <Pattern />
+            <Pattern />
+            <Pattern />
+          </div>
+          <div
+            className="flex overflow-hidden animate-loop-scroll-reverse"
+            aria-hidden={true}
+          >
+            <Pattern />
+            <Pattern />
+            <Pattern />
+            <Pattern />
+          </div>
+        </div>
+
+        {/* <div className="py-[2rem]">
+          <Pat />
+        </div> */}
       </div>
     </Fragment>
   );
