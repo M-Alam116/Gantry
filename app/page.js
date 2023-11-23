@@ -1,3 +1,5 @@
+"use client"
+
 import BlogCard from "@/components/home/BlogCard";
 import Header from "@/components/home/Header";
 import Head from "next/head";
