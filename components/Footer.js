@@ -1,7 +1,7 @@
 import Pattern from "./home/Pattern";
 function Footer() {
   return (
-    <div className="bg-black w-full px-[10px] md:px-[2rem] pt-[3rem]">
+    <div className="bg-black w-full px-[10px] md:px-[2rem] pt-[3rem] pb-[1rem]">
       <div className="grid grid-cols-2 gap-[1rem]">
         <hr className="w-full h-[3px] bg-white border-none block opacity-60" />
         <hr className="w-full h-[3px] bg-white border-none block opacity-60" />
