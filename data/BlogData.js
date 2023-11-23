@@ -79,3 +79,62 @@ export const productData = [
     image: "/HomeImages/product4.jpg",
   },
 ];
+
+export const cultureData = [
+  {
+    id: 1,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b1.jpg",
+  },
+  {
+    id: 2,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b2.jpg",
+  },
+  {
+    id: 3,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b3.jpg",
+  },
+  {
+    id: 4,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b4.jpg",
+  },
+  {
+    id: 5,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b5.jpg",
+  },
+  {
+    id: 6,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b6.jpg",
+  },
+  {
+    id: 7,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b7.jpg",
+  },
+  {
+    id: 8,
+    title:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur aspernatur mollitia architecto unde maiores fugit!",
+    view: "125k views 20m ago",
+    image: "/ResImages/b8.jpg",
+  },
+];
