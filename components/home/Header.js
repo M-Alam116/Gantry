@@ -19,8 +19,8 @@ function Header() {
           <li className="text-[18px] font-[600] text-[#ffff]">Company</li>
         </Link>
       </div>
-      <div className="text-[18px] font-[600] text-[#ffff]">
-        <button className="text-center rounded-full bg-[#fff] w-fit h-fit text-[#000] text-[15px] px-[1.5rem] py-[10px]">
+      <div className="">
+        <button className="text-center rounded-full bg-[#fff] w-fit h-fit text-[#000] text-[14px] font-[500] px-[1.5rem] py-[10px]">
           Get in touch
         </button>
       </div>
