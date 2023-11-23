@@ -6,7 +6,7 @@ function Footer() {
         <hr className="w-full h-[3px] bg-white border-none block opacity-60" />
         <hr className="w-full h-[3px] bg-white border-none block opacity-60" />
       </div>
-      <div className="flex justify-between items-start mt-[2rem]">
+      <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-between gap-[1rem] mt-[2rem]">
         <h1 className="text-[20px] font-[700] uppercase text-white">gantry</h1>
         <div className="">
           <h1 className="text-[20px] font-[700] text-white">
