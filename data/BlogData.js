@@ -15,13 +15,13 @@ export const projectsData = [
     id: 3,
     title: "Introducing GPTs",
     date: "Nov 6, 2023",
-    image: "/HomeImages/update3.png",
+    image: "/HomeImages/product1.png",
   },
   {
     id: 4,
     title: "New models and developer products announced at DevDay",
     date: "Nov 6, 2023",
-    image: "/HomeImages/update4.jpg",
+    image: "/HomeImages/product2.jpg",
   },
 ];
 
