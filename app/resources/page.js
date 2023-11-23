@@ -12,6 +12,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Card from "@/components/resources/Card";
 import { cultureData } from "../../data/BlogData";
+import Footer from "@/components/Footer";
 function Resources() {
   const [btn, setBtn] = useState("news");
 
@@ -511,6 +512,26 @@ function Resources() {
                 {cultureData.map((data) => (
                   <Card key={data.id} data={data} />
                 ))}
+              </div>
+            </div>
+          </div>
+          <Footer />
+          <div className="flex flex-col overflow-hidden">
+            <div className="flex mx-auto overflow-hidden">
+              <div className="flex overflow-hidden animate-loop-scroll">
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+              </div>
+              <div
+                className="flex overflow-hidden animate-loop-scroll"
+                aria-hidden={true}
+              >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
             </div>
           </div>

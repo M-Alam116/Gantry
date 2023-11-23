@@ -6,6 +6,8 @@ import { Fragment } from "react";
 import { TbPlayerPlayFilled } from "react-icons/tb";
 import { researchData, projectsData, productData } from "../data/BlogData";
 import Pattern from "@/components/home/Pattern";
+import Footer from "@/components/Footer";
+import Circular from "@/components/home/Circular";
 export default function Home() {
   return (
     <Fragment>
@@ -18,7 +20,10 @@ export default function Home() {
       <div className="bg-[#000000]">
         <div className="bg-[#000000] w-full max-w-[1440px] min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
-          <div className="flex flex-col items-center justify-center pt-[10rem] gap-[1rem] px-[10px]">
+          <div className="w-full pt-[5rem] opacity-60">
+            <Circular />
+          </div>
+          <div className="flex w-full flex-col items-center justify-center gap-[1rem] px-[10px] absolute top-[18rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="bg-[#fff] text-[#000] rounded-full px-[20px] py-[7px] w-fit text-[12px] font-[600] uppercase text-center">
               the continuous ML improvement platform
             </div>
@@ -46,15 +51,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* <div className="w-full">
-          <Image
-            src="/HomeImages/pattern.jpg"
-            width={1440}
-            height={200}
-            alt=""
-            className="w-full h-[100px]"
-          />
-        </div> */}
+    
           {/* ================ pattern ================== */}
           <div className="flex flex-col overflow-hidde">
             <div className="flex mx-auto overflow-hidden">
@@ -228,6 +225,26 @@ export default function Home() {
                 alt=""
                 className="w-full h-auto"
               />
+            </div>
+          </div>
+          <Footer />
+          <div className="flex flex-col overflow-hidden mt-[2rem]">
+            <div className="flex mx-auto overflow-hidden">
+              <div className="flex overflow-hidden animate-loop-scroll">
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+              </div>
+              <div
+                className="flex overflow-hidden animate-loop-scroll"
+                aria-hidden={true}
+              >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+              </div>
             </div>
           </div>
         </div>
