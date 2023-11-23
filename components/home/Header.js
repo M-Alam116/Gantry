@@ -3,7 +3,7 @@ function Header() {
   return (
     <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px]">
       <div className="text-[22px] font-[600] text-[#ffff] uppercase tracking-wider">
-        gantry
+        <Link href="/">gantry</Link>
       </div>
       <div className="hidden lg:flex justify-between gap-[4rem] items-center">
         <Link href="/">
@@ -12,7 +12,7 @@ function Header() {
         <Link href="/">
           <li className="text-[18px] font-[600] text-[#ffff]">Solutions</li>
         </Link>
-        <Link href="/">
+        <Link href="/resources">
           <li className="text-[18px] font-[600] text-[#ffff]">Resources</li>
         </Link>
         <Link href="/">
