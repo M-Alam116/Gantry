@@ -13,15 +13,15 @@ function Header() {
       </div>
 
       <div className="navigation" ref={menuRef} onClick={toggleMenu}>
-        <div className="flex justify-between gap-[4rem] items-center menu">
-          <ImCross className="w-[20px] h-[20px] lg:hidden text-white absolute top-[2rem] left-[2rem]" />
+        <div className="flex justify-between gap-[4rem] items-center menu bg-[#e2bcfa] text-black">
+          <ImCross className="w-[20px] h-[20px] lg:hidden text-black absolute top-[2rem] left-[2rem]" />
           <Link href="/">
-            <li className="text-[18px] font-[600] text-white lg:text-[#000] list-none lg:list-disc">
+            <li className="text-[18px] font-[600] text-[#000] list-none lg:list-disc">
               Product
             </li>
           </Link>
           <Link href="/">
-            <li className="text-[18px] font-[600] text-white lg:text-[#000] list-none lg:list-disc">
+            <li className="text-[18px] font-[600] text-[#000] list-none lg:list-disc">
               Solutions
             </li>
           </Link>
@@ -32,7 +32,7 @@ function Header() {
             <li className="list-none">Resources</li>
           </Link>
           <Link href="/">
-            <li className="text-[18px] font-[600] text-white lg:text-[#000] list-none lg:list-disc">
+            <li className="text-[18px] font-[600] text-[#000] list-none lg:list-disc">
               Company
             </li>
           </Link>

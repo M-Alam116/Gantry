@@ -133,7 +133,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #242323;
+    /* background: #242323; */
     z-index: 200;
     flex-direction: column;
     justify-content: center;
