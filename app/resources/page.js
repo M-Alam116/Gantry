@@ -25,7 +25,7 @@ function Resources() {
         />
       </Head>
       <div className="bg-[#e2bcfa]">
-        <div className="w-full bg-[#e2bcfa] max-w-[1440px] min-h-screen flex flex-col mx-auto overflow-hidden">
+        <div className="w-full bg-[#e2bcfa] min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
           <div className="pt-[7rem] text-[16px] font-[600] uppercase flex items-center mb-[1rem] px-[10px] md:px-[2rem]">
             <li className="">featured article</li>
@@ -119,11 +119,43 @@ function Resources() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -137,11 +169,43 @@ function Resources() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll-reverse"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -523,11 +587,43 @@ function Resources() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />

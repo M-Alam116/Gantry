@@ -20,7 +20,7 @@ export default function Home() {
         />
       </Head>
       <div className="bg-[#000000]">
-        <div className="bg-[#000000] w-full max-w-[1440px] min-h-screen flex flex-col mx-auto overflow-hidden">
+        <div className="bg-[#000000] w-full min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
           <div className="w-full pt-[5rem] opacity-60">
             <Circular />
@@ -62,11 +62,37 @@ export default function Home() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -80,11 +106,43 @@ export default function Home() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll-reverse"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -237,11 +295,43 @@ export default function Home() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />

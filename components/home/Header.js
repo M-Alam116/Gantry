@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BiMenu } from "react-icons/bi";
 import { useRef } from "react";
+import { ImCross } from "react-icons/im";
 function Header() {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
@@ -12,6 +13,7 @@ function Header() {
       </div>
       <div className="navigation" ref={menuRef} onClick={toggleMenu}>
         <div className="flex justify-between gap-[4rem] items-center menu">
+          <ImCross className="w-[20px] h-[20px] text-white absolute top-[2rem] left-[2rem]" />
           <Link href="/">
             <li className="text-[18px] font-[600] text-[#ffff] list-none lg:list-disc">
               Product
