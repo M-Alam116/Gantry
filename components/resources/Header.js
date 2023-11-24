@@ -14,7 +14,7 @@ function Header() {
 
       <div className="navigation" ref={menuRef} onClick={toggleMenu}>
         <div className="flex justify-between gap-[4rem] items-center menu">
-          <ImCross className="w-[20px] h-[20px] text-white absolute top-[2rem] left-[2rem]" />
+          <ImCross className="w-[20px] h-[20px] lg:hidden text-white absolute top-[2rem] left-[2rem]" />
           <Link href="/">
             <li className="text-[18px] font-[600] text-white lg:text-[#000] list-none lg:list-disc">
               Product
