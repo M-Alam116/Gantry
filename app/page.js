@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+import { useState, useEffect } from "react";
 import BlogCard from "@/components/home/BlogCard";
 import Header from "@/components/home/Header";
 import Head from "next/head";
@@ -10,7 +11,21 @@ import { researchData, projectsData, productData } from "../data/BlogData";
 import Pattern from "@/components/home/Pattern";
 import Footer from "@/components/Footer";
 import Circular from "@/components/home/Circular";
+import SemiCircle from "@/components/home/SemiCircle";
 export default function Home() {
+  const [showCircular, setShowCircular] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowCircular(false);
+      setTimeout(() => {
+        setShowCircular(true);
+      }, 5000);
+    }, 5000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <Fragment>
       <Head>
@@ -22,8 +37,8 @@ export default function Home() {
       <div className="bg-[#000000]">
         <div className="bg-[#000000] w-full min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
-          <div className="w-full pt-[5rem] opacity-60">
-            <Circular />
+          <div className="w-full pt-[5rem] transition-opacity duration-1000 ease-in-out">
+            {showCircular ? <Circular /> : <SemiCircle />}
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-[1rem] px-[10px] absolute top-[18rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="bg-[#fff] text-[#000] rounded-full px-[20px] py-[7px] w-fit text-[12px] font-[600] uppercase text-center">
@@ -53,7 +68,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-    
+
           {/* ================ pattern ================== */}
           <div className="flex flex-col overflow-hidde">
             <div className="flex mx-auto overflow-hidden">

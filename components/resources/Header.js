@@ -31,7 +31,7 @@ function Header() {
           >
             <li className="list-none">Resources</li>
           </Link>
-          <Link href="/">
+          <Link href="/company">
             <li className="text-[18px] font-[600] text-[#000] list-none lg:list-disc">
               Company
             </li>
