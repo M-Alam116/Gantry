@@ -583,6 +583,13 @@ function Resources() {
           <div className="flex flex-col overflow-hidden">
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll">
+              <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -608,6 +615,13 @@ function Resources() {
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />

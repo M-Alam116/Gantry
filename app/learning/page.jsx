@@ -39,45 +39,65 @@ const page = () => {
         <div className="flex flex-col overflow-hidde mt-[2rem]">
           <div className="flex mx-auto overflow-hidden">
             <div className="flex mx-auto overflow-hidden animate-loop-scroll">
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+            <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll"
               aria-hidden={true}
             >
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+               <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
           </div>
         </div>

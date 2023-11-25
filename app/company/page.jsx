@@ -33,95 +33,129 @@ const page = () => {
         <div className="flex flex-col overflow-hidden">
           <div className="flex mx-auto overflow-hidden">
             <div className="flex overflow-hidden animate-loop-scroll">
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+            <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll"
               aria-hidden={true}
             >
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+               <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
           </div>
 
           <div className="flex mx-auto overflow-hidden">
             <div className="flex overflow-hidden animate-loop-scroll-reverse">
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+            <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll-reverse"
               aria-hidden={true}
             >
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+               <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
           </div>
         </div>
@@ -332,45 +366,65 @@ const page = () => {
         <div className="flex flex-col overflow-hidden mt-[2rem] mb-0">
           <div className="flex mx-auto overflow-hidden">
             <div className="flex mx-auto overflow-hidden animate-loop-scroll">
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+            <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll"
               aria-hidden={true}
             >
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
-              <Pattern />
+               <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
             </div>
           </div>
         </div>

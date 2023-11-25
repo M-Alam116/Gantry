@@ -90,11 +90,31 @@ export default function Home() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -137,11 +157,31 @@ export default function Home() {
                 <Pattern />
                 <Pattern />
                 <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll-reverse"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -306,6 +346,13 @@ export default function Home() {
           <div className="flex flex-col overflow-hidden mt-[2rem]">
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll">
+              <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -331,6 +378,13 @@ export default function Home() {
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
