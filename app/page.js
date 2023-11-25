@@ -20,11 +20,11 @@ export default function Home() {
       setShowCircular(false);
       setTimeout(() => {
         setShowCircular(true);
-      }, 5000);
-    }, 5000);
+      }, 8000);
+    }, 8000);
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [showCircular]);
 
   return (
     <Fragment>
@@ -37,7 +37,7 @@ export default function Home() {
       <div className="bg-[#000000]">
         <div className="bg-[#000000] w-full min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
-          <div className="w-full pt-[5rem] transition-opacity duration-1000 ease-in-out">
+          <div className="w-full pt-[5rem]">
             {showCircular ? <Circular /> : <SemiCircle />}
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-[1rem] px-[10px] absolute top-[18rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
