@@ -3,18 +3,61 @@
 import Image from "next/image";
 import React from "react";
 
+import Link from "next/link";
+import { BiMenu } from "react-icons/bi";
+import { useRef } from "react";
+import { ImCross } from "react-icons/im";
+
 import HeroImg from "../../public/blogImages/HeroImg.png";
 import Footer from "@/components/blogComponents/Footer";
 import Pattern from "@/components/blogComponents/Pattern";
 // import Header from "@/components/blogComponents/Header";
-import Header from "@/components/update-resources/Header";
 
 const page = () => {
+  const menuRef = useRef(null);
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
     <>
-      <Header />
-      <div className="pt-[10rem] bg-[#3c0001] min-h-[200px]">
-        <div className="mx-auto flex items-start flex-wrap">
+      <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px] bg-[#3c0001]">
+        <div className="text-[22px] font-[600] text-white uppercase tracking-wider">
+          <Link href="/">gantry</Link>
+        </div>
+        <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+          <div className="flex justify-between gap-[4rem] items-center bg-[#3c0001] lg:bg-[#3c0001] menu">
+            <ImCross className="w-[20px] h-[20px] lg:hidden  text-white absolute top-[2rem] left-[2rem]" />
+            <Link href="/">
+              <li className="text-[18px] font-[600] text-white  list-none lg:list-disc">
+                Product
+              </li>
+            </Link>
+            <Link href="/">
+              <li className="text-[18px] font-[600] text-white list-none lg:list-disc">
+                Solutions
+              </li>
+            </Link>
+            <Link href="/resources">
+              <li className="text-[18px] font-[600]  text-white list-none lg:list-disc">
+                Resources
+              </li>
+            </Link>
+            <Link href="/company">
+              <button className="text-center rounded-full bg-white w-fit h-fit text-black text-[14px] font-[500] px-[1.5rem] py-[10px]">
+                Company
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="flex items-center gap-[1rem]">
+          <button className="text-center rounded-full bg-white w-fit h-fit text-black text-[14px] font-[500] px-[1.5rem] py-[10px]">
+            Get in touch
+          </button>
+          <span className="block lg:hidden" onClick={toggleMenu}>
+            <BiMenu className="w-[35px] h-[35px] text-white cursor-pointer" />
+          </span>
+        </div>
+      </div>
+      <div className="bg-[#3c0001] min-h-[200px]">
+        <div className="pt-[10rem] mx-auto flex items-start flex-wrap">
           <div className="w-full md:w-1/2 lg:w-1/3 xl:w-2/4 flex justify-start">
             <h1 className="text-[#fa4c27] text-[3rem] font-bold p-6">
               About Gantry
@@ -33,129 +76,129 @@ const page = () => {
         <div className="flex flex-col overflow-hidden">
           <div className="flex mx-auto overflow-hidden">
             <div className="flex overflow-hidden animate-loop-scroll">
-            <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll"
               aria-hidden={true}
             >
-               <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
           </div>
 
           <div className="flex mx-auto overflow-hidden">
             <div className="flex overflow-hidden animate-loop-scroll-reverse">
-            <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll-reverse"
               aria-hidden={true}
             >
-               <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
           </div>
         </div>
@@ -361,70 +404,91 @@ const page = () => {
         </div>
       </div>
       <div className="bg-black">
-        <Footer />
+        <div className="bg-white w-full px-[10px] md:px-[2rem] pt-[3rem] pb-[1rem]">
+          <div className="grid grid-cols-2 gap-[1rem]">
+            <hr className="w-full h-[3px] bg-black border-none block opacity-60" />
+            <hr className="w-full h-[3px] bg-black border-none block opacity-60" />
+          </div>
+          <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-between gap-[1rem] mt-[2rem]">
+            <h1 className="text-[20px] font-[700] uppercase text-black">
+              gantry
+            </h1>
+            <div className="">
+              <h1 className="text-[20px] font-[700] text-black">
+                Get started Today
+              </h1>
+              <span className="text-[18px] font-[700] text-black">
+                gantry.io
+              </span>
+            </div>
+            <button className="text-[16px] text-black font-[600] border-[2px] border-black px-[20px] py-[5px] rounded-full">
+              gantry.io
+            </button>
+          </div>
+        </div>
         {/* ================ pattern ================== */}
-        <div className="flex flex-col overflow-hidden mt-[2rem] mb-0">
+        <div className="flex flex-col overflow-hidden  mb-0">
           <div className="flex mx-auto overflow-hidden">
             <div className="flex mx-auto overflow-hidden animate-loop-scroll">
-            <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
             <div
               className="flex overflow-hidden animate-loop-scroll"
               aria-hidden={true}
             >
-               <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
+              <Pattern />
             </div>
           </div>
         </div>

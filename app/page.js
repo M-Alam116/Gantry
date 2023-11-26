@@ -14,17 +14,28 @@ import Circular from "@/components/home/Circular";
 import SemiCircle from "@/components/home/SemiCircle";
 export default function Home() {
   const [showCircular, setShowCircular] = useState(true);
+  const [showFirstAnimation, setShowFirstAnimation] = useState(true);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowCircular(false);
-      setTimeout(() => {
-        setShowCircular(true);
-      }, 8000);
-    }, 8000);
+    const circularTimeout = setTimeout(() => {
+      setShowFirstAnimation(!showFirstAnimation);
+      setShowCircular(!showCircular);
+    }, 10000);
 
-    return () => clearTimeout(timeout);
-  }, [showCircular]);
+    return () => {
+      clearTimeout(circularTimeout);
+    };
+  }, [showCircular, showFirstAnimation]);
+
+  // useEffect(() => {
+  //   const animationTimeout = setTimeout(() => {
+  //     setShowFirstAnimation(!showFirstAnimation);
+  //   }, 10000);
+
+  //   return () => {
+  //     clearTimeout(animationTimeout);
+  //   };
+  // }, [showFirstAnimation]);
 
   return (
     <Fragment>
@@ -37,9 +48,30 @@ export default function Home() {
       <div className="bg-[#000000]">
         <div className="bg-[#000000] w-full min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />
-          <div className="w-full pt-[5rem]">
-            {showCircular ? <Circular /> : <SemiCircle />}
+          <div
+            className={`w-full pt-[5rem] opacity-80 ${
+              showFirstAnimation ? "fade-in" : "fade-out"
+            }`}
+          >
+            {showCircular ? (
+              <div
+                className={`opacity-80 ${
+                  showFirstAnimation ? "fade-in" : "fade-out"
+                }`}
+              >
+                <Circular />
+              </div>
+            ) : (
+              <div
+                className={`opacity-80 ${
+                  showFirstAnimation ? "fade-in" : "fade-out"
+                }`}
+              >
+                <SemiCircle />
+              </div>
+            )}
           </div>
+
           <div className="flex w-full flex-col items-center justify-center gap-[1rem] px-[10px] absolute top-[18rem] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
             <div className="bg-[#fff] text-[#000] rounded-full px-[20px] py-[7px] w-fit text-[12px] font-[600] uppercase text-center">
               the continuous ML improvement platform
@@ -346,7 +378,7 @@ export default function Home() {
           <div className="flex flex-col overflow-hidden mt-[2rem]">
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll">
-              <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />

@@ -234,8 +234,6 @@
 
 /* ======================= Semi circular animation */
 
-
-
 /* =============== Drawer ============ */
 
 @media only screen and (max-width: 1024px) {
@@ -284,3 +282,31 @@
 }
 
 /* =============== Drawer ============ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+
