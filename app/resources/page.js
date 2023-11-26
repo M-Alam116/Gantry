@@ -30,20 +30,20 @@ function Resources() {
           <div className="pt-[7rem] text-[16px] font-[600] uppercase flex items-center mb-[1rem] px-[10px] md:px-[2rem]">
             <li className="">featured article</li>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 px-[10px] md:px-[2rem] gap-[2rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 px-[10px] md:px-[2rem]">
             <div className="w-full flex flex-col gap-3 col-span-2">
               <h1 className="text-[#020001] text-[44px] font-[600] leading-[40px] lg:pr-[10rem]">
                 How to measure language model performance
               </h1>
             </div>
-            <div className="w-full flex flex-col gap-3 col-span-1">
+            <div className="w-full flex flex-col gap-3 col-span-1 mt-[2rem] md:mt-0">
               <p className="text-black text-[14px] font-[500] text-justify w-full md:max-w-[350px]">
                 Part of an ongoing series highlighting insights from papers that
                 have contributed to the development of best practices for
                 production ML
               </p>
               <div className="flex">
-                <button className="bg-black text-white w-full rounded-2xl px-2 py-[10px] text-[14px] font-[400] text-opacity-[95%]">
+                <button className="bg-black text-white w-full rounded-full px-2 py-[10px] text-[14px] font-[400] text-opacity-[95%]">
                   Subscribe to our newletter
                 </button>
               </div>
@@ -217,7 +217,7 @@ function Resources() {
           {/* ======================= Blog content ================== */}
           <div className="bg-[#fffefa] py-[3rem] px-[10px] md:px-[2rem]">
             <hr className="h-[2.5px] opacity-50 bg-black flex mx-auto" />
-            <div className="flex flex-col sm:flex-row items-center">
+            <div className="flex flex-col sm:flex-row items-center py-[10px]">
               <div className="flex gap-[1rem] items-center">
                 <GiHamburgerMenu className="w-[25px] h-[25px] cursor-pointer" />
                 <h1 className="text-[16px] font-[600]">More Sections</h1>
@@ -225,8 +225,8 @@ function Resources() {
               <div className="flex items-center mx-auto gap-[2rem] flex-wrap">
                 <button
                   onClick={() => setBtn("news")}
-                  className={`text-[16px] font-[600] py-[10px] ${
-                    btn === "news" && "border-b-4 border-[#df624f]"
+                  className={`text-[16px] font-[600] py-1 ${
+                    btn === "news" && "border-2 border-black px-3 rounded-full"
                   }`}
                 >
                   News
@@ -234,32 +234,35 @@ function Resources() {
 
                 <button
                   onClick={() => setBtn("opinion")}
-                  className={`text-[16px] font-[600] py-[10px] ${
-                    btn === "opinion" && "border-b-4 border-[#df624f]"
+                  className={`text-[16px] font-[600] py-1 ${
+                    btn === "opinion" &&
+                    "border-2 border-black px-3 rounded-full"
                   }`}
                 >
                   Opinion
                 </button>
                 <button
                   onClick={() => setBtn("sport")}
-                  className={`text-[16px] font-[600] py-[10px] ${
-                    btn === "sport" && "border-b-4 border-[#df624f]"
+                  className={`text-[16px] font-[600] py-1 ${
+                    btn === "sport" && "border-2 border-black px-3 rounded-full"
                   }`}
                 >
                   Sport
                 </button>
                 <button
                   onClick={() => setBtn("culture")}
-                  className={`text-[16px] font-[600] py-[10px] ${
-                    btn === "culture" && "border-b-4 border-[#df624f]"
+                  className={`text-[16px] font-[600] py-1 ${
+                    btn === "culture" &&
+                    "border-2 border-black px-3 rounded-full"
                   }`}
                 >
                   Culture
                 </button>
                 <button
                   onClick={() => setBtn("lifestyle")}
-                  className={`text-[16px] font-[600] py-[10px] ${
-                    btn === "lifestyle" && "border-b-4 border-[#df624f]"
+                  className={`text-[16px] font-[600] py-1 ${
+                    btn === "lifestyle" &&
+                    "border-2 border-black px-3 rounded-full"
                   }`}
                 >
                   Lifestyle
@@ -267,6 +270,40 @@ function Resources() {
               </div>
             </div>
             <hr className="h-[2.5px] opacity-50 bg-black flex mx-auto" />
+            {btn === "news" && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-start md:place-items-end gap-[2rem] mt-[2rem]">
+                <div className="flex flex-col gap-[10px]">
+                  <li className="text-[14px] font-[600] list-none py-[5px] px-[10px] rounded-full bg-black text-white text-center">
+                    All news
+                  </li>
+                  <li className="text-[16px] font-[600] list-none">UK</li>
+                  <li className="text-[16px] font-[600] list-none">
+                    Coronavirus
+                  </li>
+                </div>
+                <div className="flex flex-col gap-[10px]">
+                  <li className="text-[16px] font-[600] list-none">Climate</li>
+                  <li className="text-[16px] font-[600] list-none">Crisis</li>
+                  <li className="text-[16px] font-[600] list-none">
+                    Environment
+                  </li>
+                </div>
+                <div className="flex flex-col gap-[10px]">
+                  <li className="text-[16px] font-[600] list-none">Tech</li>
+                  <li className="text-[16px] font-[600] list-none">Business</li>
+                  <li className="text-[16px] font-[600] list-none">
+                    Obituaries
+                  </li>
+                </div>
+                <div className="flex flex-col gap-[10px]">
+                  <li className="text-[16px] font-[600] list-none">Science</li>
+                  <li className="text-[16px] font-[600] list-none">
+                    Global Development
+                  </li>
+                  <li className="text-[16px] font-[600] list-none">Football</li>
+                </div>
+              </div>
+            )}
             <div className="pt-[3rem] pb-[10px] flex flex-col sm:flex-row items-center">
               <div className="flex gap-[5px] items-center">
                 <button className="text-[16px] font-[600] text-[#df624f]">
@@ -472,7 +509,7 @@ function Resources() {
                 <FiMinusCircle className="h-[30px] w-[30px] opacity-60" />
               </div>
               <hr className="h-[2.5px] opacity-50 bg-black flex mx-auto my-[20px]" />
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-[1rem]">
+              <div className="grid grid-cols-1 md:grid-cols-4 md:gap-[1rem]">
                 <div className="col-span-1 flex flex-col gap-[10px]">
                   <div className="">
                     <Image
@@ -501,9 +538,10 @@ function Resources() {
                     />
                   </div>
                 </div>
-                <div className="col-span-2 flex flex-col-reverse md:flex-col gap-[10px]">
+                <div className="col-span-2 flex flex-col-reverse md:flex-col gap-[10px] my-[1rem] md:my-0">
                   <h1 className="text-[18px] font-[600] leading-5">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <span className="text-[60px] font-[700]">❝</span> Lorem
+                    ipsum dolor sit amet consectetur, adipisicing elit.
                     Consectetur aspernatur mollitia architecto unde maiores
                     fugit!
                   </h1>
@@ -519,7 +557,7 @@ function Resources() {
                       className="w-[30px] h-[30px] rounded-full"
                     />
                   </div>
-                  <div className="">
+                  <div className="relative">
                     <Image
                       src="/ResImages/b4.jpg"
                       width={200}
@@ -527,6 +565,9 @@ function Resources() {
                       alt=""
                       className="w-full"
                     />
+                    <div className=" bg-white p-[10px] rounded-full absolute bottom-[1rem] right-[1rem]">
+                      <MdArrowOutward />
+                    </div>
                   </div>
                 </div>
                 <div className="col-span-1 flex flex-col gap-[10px]">
@@ -573,8 +614,21 @@ function Resources() {
               </div>
               <hr className="h-[2.5px] opacity-50 bg-black flex mx-auto my-[20px]" />
               <div className="flex flex-wrap justify-center items-center gap-[1rem] mt-[2rem]">
-                {cultureData.map((data) => (
-                  <Card key={data.id} data={data} />
+                {cultureData.map((data, index) => (
+                  <Fragment key={data.id}>
+                    <Card data={data} />
+                    {index === 1 && (
+                      <div className="w-[300px] h-[300px] rounded-full">
+                        <Image
+                          src="/ResImages/bb.jpg"
+                          width={300}
+                          height={300}
+                          alt=""
+                          className="w-full rounded-full"
+                        />
+                      </div>
+                    )}
+                  </Fragment>
                 ))}
               </div>
             </div>
@@ -583,7 +637,7 @@ function Resources() {
           <div className="flex flex-col overflow-hidden">
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll">
-              <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
@@ -615,7 +669,7 @@ function Resources() {
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
-                 <Pattern />
+                <Pattern />
                 <Pattern />
                 <Pattern />
                 <Pattern />
