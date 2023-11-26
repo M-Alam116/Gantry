@@ -16,7 +16,7 @@ const LeftSidebar = ({ show, onClose }) => {
       <div className="hidden md:block  xl:w-[23%] bg-black border-t-[1px] border-solid border-[#1D1D1D] min-h-[90vh]">
         <div className="flex flex-col w-[95%] mx-auto py-[30px]">
           <div className="flex w-full flex-col items-center">
-            <Tabs aria-label="Options">
+            <Tabs aria-label="Options" className="w-[85%]  sm:w-[90%]">
               <Tab key="pages" title="Pages">
                 <div className="border-t-[1px] border-solid border-[#262626]">
                   <LeftAccordian />
