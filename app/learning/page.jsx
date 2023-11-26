@@ -13,7 +13,7 @@ const Learning = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
-    <div className="bg-red-600 min-h-[400px] w-full max-w-[100vw] overflow-x-hidden">
+    <div className="bg-[#F46035] min-h-[400px] w-full max-w-[100vw] overflow-x-hidden">
       <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px]">
         <div className="text-[22px] font-[600] text-[#000000] uppercase tracking-wider">
           <Link href="/">gantry</Link>
@@ -52,11 +52,16 @@ const Learning = () => {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-xl font-bold">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xl font-bold bg-cover bg-center h-screen"
+        style={{
+          backgroundImage: "url(/LearningImages/LearningBackground.png)",
+        }}
+      >
         <div>
           <p className="pl-[10px]">Continual learning</p>
         </div>
-        <div className=" flex justify-center">
+        <div className=" flex pl-[10px]">
           <ul>
             <li>Machine learning</li>
             <li>B2B Solutions</li>
@@ -74,6 +79,15 @@ const Learning = () => {
             <li>Deep Learning</li>
             <li>Information Technology</li>
           </ul>
+        </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[100px]">
+        <div></div>
+        <div>
+          <p className="w-[50%] pl-[40px] mx-auto">
+            Gantry wants to create a world where technology adapts to people,
+            unlocking every individuals potential.
+          </p>
         </div>
       </div>
       <div>
