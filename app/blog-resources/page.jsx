@@ -25,7 +25,7 @@ import Footer from "@/components/blogComponents/Footer";
 import Pattern from "@/components/blogComponents/Pattern";
 // import Header from "@/components/blogComponents/Header";
 
-const page = () => {
+const BLogResources = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
@@ -631,4 +631,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BLogResources;

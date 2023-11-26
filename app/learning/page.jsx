@@ -9,7 +9,7 @@ import Link from "next/link";
 import { BiMenu } from "react-icons/bi";
 import { useRef } from "react";
 import { ImCross } from "react-icons/im";
-const page = () => {
+const Learning = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
@@ -170,7 +170,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Learning;
 
 // "use client";
 
