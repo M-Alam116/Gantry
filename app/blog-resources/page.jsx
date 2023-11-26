@@ -23,28 +23,36 @@ import { FaDotCircle } from "react-icons/fa";
 import Link from "next/link";
 import Footer from "@/components/blogComponents/Footer";
 import Pattern from "@/components/blogComponents/Pattern";
+import Head from "next/head";
 // import Header from "@/components/blogComponents/Header";
 
-const BLogResources = () => {
+const page = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
     <>
+      <Head>
+        {/* Import Google Fonts */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;500&family=Roboto+Slab&display=swap"
+        />
+      </Head>
       <div className=" w-full bg-[#01efff] min-h-[200px] flex flex-col gap-3">
         <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px]">
           <div className="text-[22px] font-[600] text-[#000000] uppercase tracking-wider">
             <Link href="/">gantry</Link>
           </div>
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
-            <div className="flex justify-between gap-[4rem] items-center menu bg-[#01efff]">
-              <ImCross className="w-[20px] h-[20px] lg:hidden absolute top-[2rem] left-[2rem]" />
+            <div className="flex justify-between gap-[4rem] items-center">
+              <ImCross className="w-[20px] h-[20px] lg:hidden  text-white absolute top-[2rem] left-[2rem]" />
               <Link href="/">
-                <li className="text-[18px] font-[600] text-[#000000] list-none lg:list-disc">
+                <li className="text-[18px] font-[600] text-white lg:text-[#000000] list-none lg:list-disc">
                   Product
                 </li>
               </Link>
               <Link href="/">
-                <li className="text-[18px] font-[600] text-[#000000] list-none lg:list-disc">
+                <li className="text-[18px] font-[600] text-white lg:text-[#000000] list-none lg:list-disc">
                   Solutions
                 </li>
               </Link>
@@ -54,7 +62,7 @@ const BLogResources = () => {
                 </button>
               </Link>
               <Link href="/company">
-                <li className="text-[18px] font-[600] text-[#000000] list-none lg:list-disc">
+                <li className="text-[18px] font-[600] text-white lg:text-[#000000] list-none lg:list-disc">
                   Company
                 </li>
               </Link>
@@ -290,7 +298,10 @@ const BLogResources = () => {
       <div className="py-[6rem] w-full bg-[#0000ff] min-h-[200px] flex flex-col gap-3">
         <div className="mx-auto w-[95%] flex items-start flex-wrap py-5">
           <div className="w-full md:w-1/2 lg:w-2/4 xl:w-2/4 flex flex-col pt-0 sm:px-4">
-            <h1 className="text-[white] min-h-[150px] text-4xl xsm:text-5xl lg:text-7xl ">
+            <h1
+              className="text-[white] min-h-[150px] text-4xl xsm:text-5xl lg:text-7xl"
+              style={{ fontFamily: "Libre Franklin, sans-serif" }}
+            >
               Transforming work and creativity with AI
             </h1>
           </div>
@@ -325,12 +336,14 @@ const BLogResources = () => {
         </div>
       </div>
       {/*  */}
-      <div className="w-full py-[20px] min-h-[100px] flex flex-col gap-3">
-        <hr className="w-[98%] bg-black h-[1px] mx-auto" />
-        <div className="w-[98%] mx-auto min-h-[150px] mt-[20px]">
-          <h1 className="text-3xl">Models</h1>
-        </div>
+      <div className="w-full py-[20px] min-h-[100px] mt-[30px] flex flex-col gap-3">
         <hr className="w-[98%] bg-black h-[2px] mx-auto" />
+        <div className="w-[98%] mx-auto min-h-[150px] mt-[20px]">
+          <h1 className="text-5xl" style={{ fontFamily: "Roboto Slab, serif" }}>
+            Models
+          </h1>
+        </div>
+        <hr className="w-[98%] bg-black h-[1px] mx-auto" />
       </div>
       <div className="min-h-[150px] flex w-[98%] mx-auto flex-wrap">
         <div className="md:w-2/2 lg:w-1/2">
@@ -349,7 +362,7 @@ const BLogResources = () => {
           <TabCmp />
         </div>
       </div>
-      <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-green-600">
+      <div className=" bg-[#28044A] min-h-[150px] flex w-full px-3 mx-auto flex-wrap text-[#7CF178]">
         <hr className="bg-green-800 w-[98%] mx-auto h-[1px] mt-[100px] shadow-none" />
         <div className="min-h-[150px] flex w-[100%] mx-auto flex-wrap mt-5">
           <div className="md:w-2/2 lg:w-1/2">
@@ -357,11 +370,11 @@ const BLogResources = () => {
           </div>
           <div className="md:w-2/2 lg:w-1/2 flex flex-col gap-2 min-h-[150px]">
             <p className="text-xl">
-              GPT-4 is OpenAI&rsquo;s most advanced system, producing safer and
-              more useful responses.
+              DALL·E is an AI system that can create realistic images and art
+              from a description in natural language
             </p>
             <Link href="" className="underline">
-              Learn-about GPT-4
+              Learn-about DALL-E
             </Link>
           </div>
           <div>
@@ -393,12 +406,17 @@ const BLogResources = () => {
       <div className="min-h-[200px] bg-black flex flex-col gap-5 w-full mx-auto py-7">
         <div className="w-[95%] mx-auto flex flex-col gap-4">
           <hr className="w-full bg-white mx-auto h-[1px] mt-[100px]" />
-          <h1 className="text-4xl text-white">Made for developers</h1>
+          <h1
+            className="text-5xl text-white"
+            style={{ fontFamily: "Roboto Slab, serif" }}
+          >
+            Made for developers
+          </h1>
         </div>
         <div className="flex flex-wrap md:gap-0 gap-5 min-h-[200px] text-white p-5">
           <div className="w-full sm:w-2/2 md:w-1/2 flex flex-col gap-3 pl-3">
             <p className="text-xl md:w-[60%]">
-              Download can start building with a just simple API call
+              Developers can start building with a just simple API call
             </p>
             <div className="flex flex-col gap-3">
               <Link href="" className="underline flex gap-2 items-center">
@@ -631,4 +649,4 @@ const BLogResources = () => {
   );
 };
 
-export default BLogResources;
+export default page;
