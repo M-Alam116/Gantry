@@ -41,7 +41,7 @@ const LeftSidebar = ({ show, onClose }) => {
       </div>
       {
         <div
-          className={`fixed top-0  left-0 md:hidden w-[300px] h-screen bg-black  overflow-hidden transition-transform transform ${
+          className={`fixed z-[100] top-0  left-0 md:hidden w-[300px] h-screen bg-black  overflow-hidden transition-transform transform ${
             show ? "translate-x-0" : "-translate-x-full"
           }`}
         >
