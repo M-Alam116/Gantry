@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Pattern from "@/components/home/Pattern";
 import { Fragment } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiShare2, FiMinusCircle } from "react-icons/fi";
@@ -12,7 +11,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Card from "@/components/resources/Card";
 import { cultureData } from "../../data/BlogData";
-import Footer from "@/components/Footer";
+import BlackPattern from "@/components/BlackPattern";
 function Resources() {
   const [btn, setBtn] = useState("news");
 
@@ -115,101 +114,101 @@ function Resources() {
           <div className="flex flex-col overflow-hidde mt-[2rem]">
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll">
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll"
                 aria-hidden={true}
               >
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
               </div>
             </div>
 
             <div className="flex mx-auto overflow-hidden">
               <div className="flex overflow-hidden animate-loop-scroll-reverse">
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
               </div>
               <div
                 className="flex overflow-hidden animate-loop-scroll-reverse"
                 aria-hidden={true}
               >
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
+                <BlackPattern />
               </div>
             </div>
           </div>
@@ -633,69 +632,91 @@ function Resources() {
               </div>
             </div>
           </div>
-          <Footer />
-          <div className="flex flex-col overflow-hidden">
-            <div className="flex mx-auto overflow-hidden">
-              <div className="flex overflow-hidden animate-loop-scroll">
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+          <div className="bg-white w-full pt-[3rem] pb-[1rem]">
+            <div className="grid grid-cols-2 gap-[1rem] px-[10px] md:px-[2rem]">
+              <hr className="w-full h-[3px] bg-black border-none block opacity-60" />
+              <hr className="w-full h-[3px] bg-black border-none block opacity-60" />
+            </div>
+            <div className="flex flex-col justify-center items-center sm:flex-row sm:items-start sm:justify-between gap-[1rem] mt-[2rem] px-[10px] md:px-[2rem]">
+              <h1 className="text-[20px] font-[700] uppercase">
+                gantry
+              </h1>
+              <div className="">
+                <h1 className="text-[20px] font-[700] ">
+                  Get started Today
+                </h1>
+                <span className="text-[18px] font-[700] ">
+                  gantry.io
+                </span>
               </div>
-              <div
-                className="flex overflow-hidden animate-loop-scroll"
-                aria-hidden={true}
-              >
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
-                <Pattern />
+              <button className="text-[16px] font-[600] border-[2px] border-black px-[20px] py-[5px] rounded-full">
+                gantry.io
+              </button>
+            </div>
+
+            <div className="flex flex-col overflow-hidden mt-[1rem]">
+              <div className="flex mx-auto overflow-hidden">
+                <div className="flex overflow-hidden animate-loop-scroll">
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                </div>
+                <div
+                  className="flex overflow-hidden animate-loop-scroll"
+                  aria-hidden={true}
+                >
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                  <BlackPattern />
+                </div>
               </div>
             </div>
           </div>
