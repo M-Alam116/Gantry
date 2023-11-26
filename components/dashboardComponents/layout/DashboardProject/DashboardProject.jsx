@@ -178,13 +178,13 @@ const CardDashboard = () => {
   return (
     <div className="  flex flex-col gap-[10px]">
       <div className="bg-[#282828] rounded-md  py-[30px]">
-        <div className="relative w-[70%] h-[200px] mx-auto">
+        <div className="relative w-[70%] h-[200px] mx-auto ">
           <Image
             src={cardPic}
             alt="white background"
             fill
             priority
-            className="absolute object-cover w-full h-full"
+            className="absolute object-cover w-full h-full "
           />
         </div>
       </div>
