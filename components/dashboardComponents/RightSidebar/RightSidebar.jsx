@@ -50,6 +50,7 @@ const RightSidebar = ({ show, onClose }) => {
           </div>
         </div>
       </div>
+      {/*     Mobile View */}
       {
         // <div className="relative block md:hidden w-[320px] bg-black border-t-[1px] border-solid border-[#1D1D1D] min-h-[100vh] z-10">
         <div
@@ -78,11 +79,11 @@ const RightSidebar = ({ show, onClose }) => {
               <h4 className="text-[18px] font-medium text-white">Theme </h4>
               <div className="flex bg-[#1D1D1D] rounded-lg px-[15px] py-[15px] text-[14px] gap-[5px] items-center">
                 <div className="flex rounded-lg">
-                  <span className="bg-white w-[40px] h-[30px] rounded-l-md"></span>
-                  <span className="bg-gray-300 w-[40px]  h-[30px]"></span>
-                  <span className="bg-gray-500 w-[40px] h-[30px]"></span>
-                  <span className="bg-[#2B2A4C] w-[40px] h-[30px]"></span>
-                  <span className="bg-[#9AD0C2] w-[36px] h-[30px] rounded-r-md"></span>
+                  <span className="bg-white w-[50px] h-[30px] rounded-l-md"></span>
+                  <span className="bg-gray-300 w-[50px]  h-[30px]"></span>
+                  <span className="bg-gray-500 w-[50px] h-[30px]"></span>
+                  <span className="bg-[#2B2A4C] w-[48px] h-[30px]"></span>
+                  <span className="bg-[#9AD0C2] w-[45px] h-[30px] rounded-r-md"></span>
                 </div>
               </div>
               <span className="flex bg-[#1D1D1D] rounded-lg px-[10px] py-[5px] text-[14px] gap-[5px] items-center text-white justify-center">
