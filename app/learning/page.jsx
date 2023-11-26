@@ -55,7 +55,7 @@ const Learning = () => {
       <div
         className="grid grid-cols-1 sm:grid-cols-2 gap-1 text-xl font-bold bg-cover bg-center h-screen"
         style={{
-          backgroundImage: "url(/LearningImages/LearningBackground.png)",
+          backgroundImage: "url(/LearningImages/Learningbackground.png)",
         }}
       >
         <div>
