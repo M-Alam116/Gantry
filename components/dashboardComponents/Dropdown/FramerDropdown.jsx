@@ -21,7 +21,7 @@ export default function FramerDropdown() {
     <Dropdown className="dark">
       <DropdownTrigger>
         <span
-          className="bg-[#333333] rounded-md px-[10px]  py-[10px]  flex items-center justify-center h-[80%] my-auto gap-[2px]"
+          className="bg-[#333333] rounded-md px-[10px]  py-[10px] cursor-pointer  flex items-center justify-center h-[80%] my-auto gap-[2px]"
           onClick={handleClick}
         >
           <Framer />{" "}

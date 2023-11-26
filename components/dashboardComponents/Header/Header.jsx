@@ -21,19 +21,19 @@ const Header = () => {
             <FramerDropdown />
           </span>
           <div className="hidden md:flex gap-2 items-center">
-            <span className="bg-[#888888] p-[5px]  rounded-md flex items-center justify-center  ">
+            <span className="bg-[#888888] p-[5px] cursor-pointer rounded-md flex items-center justify-center  ">
               <FaPlus className="text-black" />
             </span>
-            <span className=" my-auto ">
+            <span className=" my-auto cursor-pointer ">
               <RiLayout2Fill className="text-[#888888] h-full text-3xl" />
             </span>
-            <span className="  bg-[#888888] px-[7px] py-[1px] rounded-md flex items-center justify-center  ">
+            <span className="  bg-[#888888] px-[7px] cursor-pointer py-[1px] rounded-md flex items-center justify-center  ">
               <h4 className="text-black font-bold">T</h4>
             </span>
-            <span className="bg-[#888888] p-[5px] rounded-md flex items-center justify-center   ">
+            <span className="bg-[#888888] p-[5px] cursor-pointer rounded-md flex items-center justify-center   ">
               <FaDatabase className="text-black" />
             </span>
-            <span className="bg-[#888888] p-[5px] rounded-md flex items-center justify-center  my-auto ">
+            <span className="bg-[#888888] p-[5px] cursor-pointer rounded-md flex items-center justify-center  my-auto ">
               <MdElectricBolt className="text-black" />
             </span>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         {/*  Last div */}
         <div className="flex gap-[10px] items-center">
-          <span className="relative w-[27px] h-[27px] rounded-md">
+          <span className="relative w-[27px] h-[27px] cursor-pointer rounded-md">
             <Image
               src={profile}
               alt="Picture of the author"
@@ -55,13 +55,13 @@ const Header = () => {
               sizes="27px"
             />
           </span>
-          <span className="bg-[#2B2B2B] p-[7px]  rounded-md hidden md:flex items-center justify-center  ">
+          <span className="bg-[#2B2B2B] p-[7px] cursor-pointer  rounded-md hidden md:flex items-center justify-center  ">
             <LuGlobe className="text-white" />
           </span>
-          <span className="bg-[#2B2B2B] p-[7px]  rounded-md hidden md:flex items-center justify-center  ">
+          <span className="bg-[#2B2B2B] p-[7px] cursor-pointer  rounded-md hidden md:flex items-center justify-center  ">
             <IoMdSettings className="text-white" />
           </span>
-          <span className="bg-[#2B2B2B] p-[7px]  rounded-md hidden md:flex items-center justify-center  ">
+          <span className="bg-[#2B2B2B] p-[7px] cursor-pointer  rounded-md hidden md:flex items-center justify-center  ">
             <FaPlay className="text-white" />
           </span>
           <button className="text-white font-medium text-[14px]  bg-[#2B2B2B] py-[5px] px-[7px] rounded-md  md:block hidden">

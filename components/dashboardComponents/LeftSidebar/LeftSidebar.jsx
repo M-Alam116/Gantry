@@ -13,16 +13,19 @@ const LeftSidebar = ({ show, onClose }) => {
 
   return (
     <>
-      <div className="hidden md:block  xl:w-[23%] bg-black border-t-[1px] border-solid border-[#1D1D1D] min-h-[90vh]">
+      <div className="hidden md:block  w-[20%] bg-black border-t-[1px] border-solid border-[#1D1D1D] min-h-[90vh]">
         <div className="flex flex-col w-[95%] mx-auto py-[30px]">
           <div className="flex w-full flex-col items-center">
-            <Tabs aria-label="Options" className="w-[85%]  sm:w-[90%]">
+            <Tabs
+              aria-label="Options"
+              className="w-[85%]  sm:w-full  xl:w-[95%]"
+            >
               <Tab key="pages" title="Pages">
-                <div className="border-t-[1px] border-solid border-[#262626]">
+                <div className=" w-[80%]  lg:w-[90%]">
                   <LeftAccordian />
                 </div>
               </Tab>
-              <Tab key="layer" title="Layer">
+              <Tab key="layer" title="Layers">
                 <Card>
                   <CardBody>Layers</CardBody>
                 </Card>
@@ -51,16 +54,16 @@ const LeftSidebar = ({ show, onClose }) => {
           </span>
           <div className="flex flex-col w-[95%] mx-auto py-[30px] my-[30px]">
             <div className="flex  flex-col items-center  w-[280px]  ">
-              <Tabs aria-label="Options">
+              <Tabs aria-label="Options" className="w-[95%]">
                 <Tab key="pages" title="Pages">
                   <div className="border-t-[1px] border-solid border-[#262626] ">
                     <LeftAccordian />
                   </div>
                 </Tab>
-                <Tab key="layer" title="Layer">
+                <Tab key="layer" title="Layers">
                   <div className="border-t-[1px] border-solid border-[#262626]  px-[5px] ">
                     <div className="flex bg-[#1D1D1D] text-white rounded-lg px-[15px] py-[10px] text-[14px] gap-[5px] items-center">
-                      Layer
+                      Layers
                     </div>
                   </div>
                 </Tab>
