@@ -14,28 +14,27 @@ import Circular from "@/components/home/Circular";
 import SemiCircle from "@/components/home/SemiCircle";
 export default function Home() {
   const [showCircular, setShowCircular] = useState(true);
-  const [showFirstAnimation, setShowFirstAnimation] = useState(true);
+  const [showFirstAnimation, setShowFirstAnimation] = useState(false);
 
   useEffect(() => {
     const circularTimeout = setTimeout(() => {
-      setShowFirstAnimation(!showFirstAnimation);
       setShowCircular(!showCircular);
     }, 10000);
 
     return () => {
       clearTimeout(circularTimeout);
     };
-  }, [showCircular, showFirstAnimation]);
+  }, [showCircular]);
 
-  // useEffect(() => {
-  //   const animationTimeout = setTimeout(() => {
-  //     setShowFirstAnimation(!showFirstAnimation);
-  //   }, 10000);
+  useEffect(() => {
+    const animationTimeout = setTimeout(() => {
+      setShowFirstAnimation(!showFirstAnimation);
+    }, 10000);
 
-  //   return () => {
-  //     clearTimeout(animationTimeout);
-  //   };
-  // }, [showFirstAnimation]);
+    return () => {
+      clearTimeout(animationTimeout);
+    };
+  }, [showFirstAnimation]);
 
   return (
     <Fragment>
