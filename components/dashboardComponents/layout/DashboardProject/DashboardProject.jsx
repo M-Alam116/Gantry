@@ -34,9 +34,9 @@ const DashboardProject = () => {
             setShowLeftNavList(show);
           }}
         />
-        <div className="w-full md:w-[55%]">
-          {/*  Menu */}
+        <div className="w-full md:w-[55%] mx-auto">
           <div className=" w-[90%] mx-auto">
+            {/*  Menu */}
             <div className="flex justify-between ">
               {!showLeftNavList && (
                 <span
@@ -58,7 +58,7 @@ const DashboardProject = () => {
             {/*         Main */}
             <div className="grid xs:grid-cols-2 lg:grid-cols-4 w-[95%] lg:w-full mx-auto  my-[70px] gap-[12px]">
               <div
-                className="flex  lg:max-w-[160px] h-[200px] rounded-ld overflow-hidden  bg-cover rounded-lg"
+                className="flex  lg:max-w-[160px] 3xl:max-w-[190px]  h-[200px] rounded-ld overflow-hidden  bg-cover rounded-lg"
                 style={{
                   backgroundImage: `url('/dashboard/pic1.png')`,
                 }}
@@ -73,7 +73,7 @@ const DashboardProject = () => {
                 </div>
               </div>
               <div
-                className="flex  lg:max-w-[160px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
+                className="flex  lg:max-w-[160px] 3xl:max-w-[190px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
                 style={{
                   backgroundImage: `url('/dashboard/pic2.png')`,
                 }}
@@ -88,7 +88,7 @@ const DashboardProject = () => {
                 </div>
               </div>
               <div
-                className="flex lg:max-w-[160px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
+                className="flex lg:max-w-[160px] 3xl:max-w-[190px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
                 style={{
                   backgroundImage: `url('/dashboard/pic3.png')`,
                 }}
@@ -103,7 +103,7 @@ const DashboardProject = () => {
                 </div>
               </div>
               <div
-                className="flex lg:max-w-[160px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
+                className="flex lg:max-w-[160px] 3xl:max-w-[190px] h-[200px]  rounded-ld overflow-hidden  bg-cover rounded-lg"
                 style={{
                   backgroundImage: `url('/dashboard/pic4.png')`,
                 }}
@@ -178,13 +178,13 @@ const CardDashboard = () => {
   return (
     <div className="  flex flex-col gap-[10px]">
       <div className="bg-[#282828] rounded-md  py-[30px]">
-        <div className="relative w-[70%] h-[200px] mx-auto">
+        <div className="relative w-[70%] h-[200px] mx-auto ">
           <Image
             src={cardPic}
             alt="white background"
             fill
             priority
-            className="absolute object-cover w-full h-full"
+            className="absolute object-cover w-full h-full "
           />
         </div>
       </div>
