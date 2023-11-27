@@ -12,6 +12,10 @@ import Pattern from "@/components/home/Pattern";
 import Footer from "@/components/Footer";
 import Circular from "@/components/home/Circular";
 import SemiCircle from "@/components/home/SemiCircle";
+
+import HomeTransition from "../components/hometransition/homeTransition";
+
+
 export default function Home() {
   const [showCircular, setShowCircular] = useState(true);
   const [showFirstAnimation, setShowFirstAnimation] = useState(false);
@@ -44,8 +48,10 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
         />
       </Head>
+      <HomeTransition/>
       <div className="bg-[#000000]">
         <div className="bg-[#000000] w-full min-h-screen flex flex-col mx-auto overflow-hidden">
+        
           <Header />
           <div
             className={`w-full pt-[5rem] opacity-80 ${

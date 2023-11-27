@@ -12,6 +12,12 @@ import Image from "next/image";
 import Card from "@/components/resources/Card";
 import { cultureData } from "../../data/BlogData";
 import BlackPattern from "@/components/BlackPattern";
+
+// import animation
+import ResourceTransition from "./resourceTransition";
+
+
+
 function Resources() {
   const [btn, setBtn] = useState("news");
 
@@ -23,6 +29,7 @@ function Resources() {
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
         />
       </Head>
+      <ResourceTransition/>
       <div className="bg-[#e2bcfa]">
         <div className="w-full bg-[#e2bcfa] min-h-screen flex flex-col mx-auto overflow-hidden">
           <Header />

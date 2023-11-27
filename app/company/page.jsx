@@ -13,12 +13,16 @@ import Footer from "@/components/blogComponents/Footer";
 import Pattern from "@/components/blogComponents/Pattern";
 // import Header from "@/components/blogComponents/Header";
 
+import CompanyTransition from "./tocompanyTransition";
+
+
 const Company = () => {
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
     <>
-      <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px] bg-[#3c0001]">
+      <CompanyTransition/>
+      <div className="w-full flex items-center justify-between px-[10px] md:px-[2rem] py-[1.5rem] h-[80px] bg-[#3c0001] ">
         <div className="text-[22px] font-[600] text-white uppercase tracking-wider">
           <Link href="/">gantry</Link>
         </div>
